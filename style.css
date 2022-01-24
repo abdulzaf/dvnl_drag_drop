@@ -1,0 +1,90 @@
+#container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 19vw 60vw 19vw;
+  grid-template-rows: 10vh 90vh;
+  grid-template-areas:
+    "pnl-logo pnl-target pnl-rec"
+    "pnl-main pnl-main pnl-main";
+}
+.panel {
+  border: black;
+  border-width: 1px;
+  border-style: solid;
+}
+#pnl-logo {
+  grid-area: pnl-logo;
+}
+#pnl-target {
+  display: grid;
+  grid-area: pnl-target;
+  position: relative;
+}
+#pnl-rec {
+  grid-area: pnl-rec;
+}
+#pnl-main {
+  grid-area: pnl-main;
+  position: relative;
+}
+
+.target {
+  border-radius: 50%;
+  touch-action: none;
+  user-select: none;
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  border: 2px solid black;
+  background-color: greenyellow;
+  top: 10px;
+}
+
+.item {
+  border-radius: 50%;
+  touch-action: none;
+  user-select: none;
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  border: 2px solid black;
+  background-color: crimson;
+}
+
+#item1 {
+  top: 75%;
+  left: 75%;
+}
+#item2 {
+  top: 60%;
+  left: 15%;
+}
+#item3 {
+  top: 20%;
+  left: 85%;
+}
+#item4 {
+  top: 30%;
+  left: 15%;
+}
+#item5 {
+  top: 40%;
+  left: 50%;
+}
+
+#tar1 {
+  left: 0%;
+}
+#tar2 {
+  left: 20%;
+}
+#tar3 {
+  left: 40%;
+}
+#tar4 {
+  left: 60%;
+}
+#tar5 {
+  left: 80%;
+}
